@@ -25,19 +25,21 @@ export default function Home() {
                 {/* Hero Section */}
                 <section className="h-screen flex items-center justify-center bg-hero-video bg-cover bg-center hero">
                     <div className="text-center text-white">
-                        <h1 className="text-5xl md:text-7xl font-bold animate-fade-in-down">Welcome to Joystick junction</h1>
-                        <p className="text-lg md:text-2xl mt-4 animate-fade-in-up">The ultimate gaming experience awaits!</p>
-                        <button className="mt-8 px-8 py-4 bg-red-600 hover:bg-red-800 rounded-full text-xl animate-bounce">
+                        <h1 className="text-5xl md:text-7xl font-bold animate-fade-in-down">Welcome to Joystick Junction</h1>
+                        <p className="text-lg md:text-2xl mt-4 animate-fade-in-up font-semibold">Start Your Gaming Journey Today!</p>
+                        <a href="https://wa.link/b08iy4">
+                        <button className="mt-8 px-8 py-4 bg-black hover:bg-gray-600 hover:text-black hover:font-semibold rounded-full text-xl animate-bounce">
                             Book a Session
-                        </button>
+                        </button>   
+                        </a>
                     </div>
                 </section>
 
                 {/* About Us Section */}
-                <section ref={aboutRef} className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-black">
+                <section ref={aboutRef} className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 text-black">
                     <div className="max-w-6xl mx-auto text-center flex items-center justify-center flex-col">
                         <h2 className="text-4xl font-bold animate-fade-in">About Us</h2>
-                        <p className="mt-6 text-lg animate-fade-in-up w-[500px] sm:w-full">
+                        <p className="mt-6 text-lg animate-fade-in-up w-[500px] sm:w-full font-semibold">
                             JoyStick Junction (Paradise For Gamers) is a place where you and your
                             team mates can come and experience fast and seamless gaming
                             experience. Our Gaming Hall is packed with industry standards gaming
@@ -47,16 +49,17 @@ export default function Home() {
                 </section>
 
                 {/* Games Offered Section */}
-                <section className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-center">
+                <section className="py-16 px-4 bg-gradient-to-r from-gray-600 via-gray-400 to-gray-600 text-center">
                     <div className="max-w-7xl mx-auto">
                         <h2 className="text-4xl font-bold text-black animate-fade-in">Features</h2>
                         <div className=" py-4">
                             <Marquee gradient={false} speed={50} >
                                 <div className='flex gap-[30px]'>
-                                    <h2 className='text-[18px] font-semibold text-white'> PS5 Tournaments</h2>
-                                    <h2 className='text-[18px] font-semibold text-white'> PS4 Tournaments</h2>
-                                    <h2 className='text-[18px] font-semibold text-white'> Thursday's Game Night</h2>
-                                    <h2 className='text-[18px] font-semibold text-white'> Mini Bar For Gamers</h2>
+                                    <h2 className='text-[28px] font-mono font-semibold text-yellow-500'> <i>*PS5-Tournaments*</i></h2>
+                                    <h2 className='text-[28px] font-mono font-semibold text-red-700'> <i>*PS4-Tournaments*</i></h2>
+                                    <h2 className='text-[28px] font-mono font-semibold text-yellow-500'> <i>*Thursday's Game Night*</i></h2>
+                                    <h2 className='text-[28px] font-mono font-semibold text-red-700'> <i>*Mini Bar For Gamers*</i></h2>
+                                    <h2 className='text-[28px] font-mono font-semibold text-red-700'> <i></i></h2>
                                 </div>
                             </Marquee>
                         </div>
@@ -86,7 +89,7 @@ export default function Home() {
                 </section> */}
 
                 {/* Testimonials Section */}
-                <section className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-center">
+                <section className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 text-center">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-4xl font-bold text-black animate-fade-in">What Gamers Are Saying</h2>
                         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -3,18 +3,18 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <div className="relative bg-cover bg-center bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-black" style={{ backgroundImage: "url('/recent.png')" }}>
+        <div className="relative bg-cover bg-center text-black" style={{ backgroundImage: "url('/recent.png')" }}>
             {/* Overlay for better text visibility */}
             <div className="absolute inset-0 bg-black opacity-40"></div>
             
-            <div className="relative flex flex-col items-center justify-center sm:px-[20px] lg:gap-[50px] py-[30px] sm:gap-[20px]">
-                <h1 className="lg:text-5xl sm:text-4xl font-extrabold text-white relative z-10">Services</h1>
+            <div className="relative flex flex-col items-center justify-center sm:px-[20px] lg:gap-[50px] py-[30px] sm:gap-[20px] ">
+                <h1 className="lg:text-5xl sm:text-4xl font-extrabold text-black relative z-10">Services</h1>
                 <div className="relative z-10 flex sm:flex-col">
                     <div className="flex gap-5 flex-col lg:items-center lg:justify-center max-sm:items-center md:items-center">
                         <h1 className="font-bold lg:text-2xl md:text-3xl text-white">
                             <u>Experience Our Services:</u>
                         </h1>
-                        <ul className="flex gap-3 flex-col font-medium max-sm:px-5 text-orange-500">
+                        <ul className="flex gap-3 flex-col font-medium max-sm:px-5">
                             <div className="flex gap-5">
                                 <Image height={20} width={20} src={"/check.svg"} alt="" />
                                 <li className="md:text-xl text-white">FC 24/25</li>
@@ -34,6 +34,10 @@ const Services = () => {
                             <div className="flex gap-5">
                                 <Image height={20} width={20} src={"/check.svg"} alt="" />
                                 <li className="md:text-xl text-white">PS5 and PS4 Console Repairs and Maintenance</li>
+                            </div>
+                            <div className="flex gap-5 lg:items-center">
+                                <Image height={20} width={20} src={"/check.svg"} alt="" />
+                                <li className="md:text-xl text-white">Board Games: Chess, Monopoly, Scrabble e.t.c</li>
                             </div>
                         </ul>
                     </div>
@@ -70,7 +74,7 @@ const Services = () => {
                                 <li className="md:text-xl">Board Games: Chess, Monopoly, Scrabble e.t.c</li>
                             </div>
                         </ul>
-                        <a className="font-semibold p-3 relative bottom-[10rem] sm:h-20 sm:w-20 sm:left-[15rem] sm:bottom-[12rem] left-12 rounded-full bg-black text-white hover:bg-white hover:text-black" href="https://wa.link/b08iy4">
+                        <a className="font-semibold p-3 relative bottom-[10rem] sm:h-20 sm:w-20 sm:left-[15rem] sm:bottom-[12rem] left-12 rounded-full bg-black text-white hover:bg-white hover:text-black hover:font-semibold" href="https://wa.link/b08iy4">
                             <button>ORDER <br /> NOW</button>
                         </a>
                     </div>

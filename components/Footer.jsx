@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='flex flex-col'>
             <div
                 id="Contact"
-                className="lg:flex gap-5 justify-between bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500  lg:h-[60vh] items-center sm:text-center sm:justify-between md:justify-center sm:py-[20px] w-full"
+                className="lg:flex gap-5 justify-between bg-gradient-to-r from-gray-600 via-gray-400 to-gray-600  lg:h-[60vh] items-center sm:text-center sm:justify-between md:justify-center sm:py-[20px] w-full"
             >
                 <div className="flex items-center gap-2 lg:pl-[5%] max-sm:justify-center max-sm:pt-5 md:justify-center md:pt-5">
                     <Image height={100} width={30} src={"/geo-alt-fill.svg"} alt="" />
