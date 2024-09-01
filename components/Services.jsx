@@ -7,7 +7,7 @@ const Services = () => {
             {/* Overlay for better text visibility */}
             <div className="absolute inset-0 bg-black opacity-40"></div>
             
-            <div className="relative flex flex-col items-center justify-center sm:px-[20px] lg:gap-[50px] mt-[5%] py-[30px] sm:gap-[20px]">
+            <div className="relative flex flex-col items-center justify-center sm:px-[20px] lg:gap-[50px] py-[30px] sm:gap-[20px]">
                 <h1 className="lg:text-5xl sm:text-4xl font-extrabold text-white relative z-10">Services</h1>
                 <div className="relative z-10 flex sm:flex-col">
                     <div className="flex gap-5 flex-col lg:items-center lg:justify-center max-sm:items-center md:items-center">
