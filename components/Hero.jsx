@@ -1,17 +1,30 @@
 // pages/index.js
 
+"use client"
+import Navbar from '@/app/Navbar';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRef } from 'react';
 import Marquee from 'react-fast-marquee';
+import Services from './Services';
+import Tournaments from './Tournaments';
+import Footer from './Footer';
 
 export default function Home() {
+    const aboutRef = useRef(null);
+    const serviceRef = useRef(null);
+    const contactRef = useRef(null);
+
+    const scrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div>
-
-            <main className="bg-black text-white">
+            <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} serviceRef={serviceRef} contactRef={contactRef} />
+            <main className="text-white">
                 {/* Hero Section */}
                 <section className="h-screen flex items-center justify-center bg-hero-video bg-cover bg-center hero">
-                    <div className="text-center">
+                    <div className="text-center text-white">
                         <h1 className="text-5xl md:text-7xl font-bold animate-fade-in-down">Welcome to Joystick junction</h1>
                         <p className="text-lg md:text-2xl mt-4 animate-fade-in-up">The ultimate gaming experience awaits!</p>
                         <button className="mt-8 px-8 py-4 bg-red-600 hover:bg-red-800 rounded-full text-xl animate-bounce">
@@ -21,7 +34,7 @@ export default function Home() {
                 </section>
 
                 {/* About Us Section */}
-                <section className="py-16 px-4 bg-gray-900">
+                <section ref={aboutRef} className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-black">
                     <div className="max-w-6xl mx-auto text-center flex items-center justify-center flex-col">
                         <h2 className="text-4xl font-bold animate-fade-in">About Us</h2>
                         <p className="mt-6 text-lg animate-fade-in-up w-[500px] sm:w-full">
@@ -34,23 +47,24 @@ export default function Home() {
                 </section>
 
                 {/* Games Offered Section */}
-                <section className="py-16 px-4 bg-black text-center">
+                <section className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-center">
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="text-4xl font-bold text-white animate-fade-in">Games We Offer</h2>
-                        <div className="bg-black py-4">
-                            <Marquee gradient={false} speed={50}>
-                                <div className="text-white text-2xl mx-8">Call of Duty</div>
-                                <div className="text-white text-2xl mx-8">FIFA 23</div>
-                                <div className="text-white text-2xl mx-8">Fortnite</div>
-                                <div className="text-white text-2xl mx-8">Mortal Kombat 11</div>
-                                <div className="text-white text-2xl mx-8">God of War</div>
+                        <h2 className="text-4xl font-bold text-black animate-fade-in">Features</h2>
+                        <div className=" py-4">
+                            <Marquee gradient={false} speed={50} >
+                                <div className='flex gap-[30px]'>
+                                    <h2 className='text-[18px] font-semibold text-white'> PS5 Tournaments</h2>
+                                    <h2 className='text-[18px] font-semibold text-white'> PS4 Tournaments</h2>
+                                    <h2 className='text-[18px] font-semibold text-white'> Thursday's Game Night</h2>
+                                    <h2 className='text-[18px] font-semibold text-white'> Mini Bar For Gamers</h2>
+                                </div>
                             </Marquee>
                         </div>
                     </div>
                 </section>
 
                 {/* Pricing Section */}
-                <section className="py-16 px-4 bg-gray-900">
+                {/* <section className="py-16 px-4 bg-gray-900">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-4xl font-bold animate-fade-in">Pricing</h2>
                         <p className="mt-6 text-lg animate-fade-in-up">Affordable gaming sessions starting at just #2000.</p>
@@ -69,12 +83,12 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Testimonials Section */}
-                <section className="py-16 px-4 bg-black text-center">
+                <section className="py-16 px-4 bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500 text-center">
                     <div className="max-w-6xl mx-auto">
-                        <h2 className="text-4xl font-bold text-white animate-fade-in">What Gamers Are Saying</h2>
+                        <h2 className="text-4xl font-bold text-black animate-fade-in">What Gamers Are Saying</h2>
                         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="bg-gray-800 p-8 rounded-lg animate-fade-in-left">
                                 <p className="text-lg">"The best place to game! The atmosphere is amazing, and the staff is super friendly."</p>
@@ -89,8 +103,18 @@ export default function Home() {
                 </section>
 
                 {/* Location & Contact Section */}
-                
+
             </main>
+            <div ref={serviceRef}>
+                <Services />
+            </div>
+            <div>
+                <Tournaments />
+            </div>
+            <div ref={contactRef}>
+                <Footer />
+
+            </div>
         </div>
     );
 }

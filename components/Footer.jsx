@@ -5,30 +5,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='flex flex-col'>
-            <section className="py-16 px-4 bg-gray-900 text-center">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-bold animate-fade-in text-white">Find Us</h2>
-                    <p className="mt-6 text-lg animate-fade-in-up text-white">123 Gaming Street, Gamerville, USA</p>
-                    <div className="mt-12">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094125!2d144.9537353156823!3d-37.81627974202196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f3f5cb5a1d03!2sGaming+Street!5e0!3m2!1sen!2sus!4v1548759168695"
-                            width="600"
-                            height="450"
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            loading="lazy"
-                            className="w-full rounded-lg"
-                        ></iframe>
-                    </div>
-                    <div className="mt-12">
-                        <a href="mailto:info@gaminghouse.com" className="text-xl hover:text-red-600 text-white animate-fade-in-up">info@gaminghouse.com</a>
-                        <p className="mt-4 text-lg text-white">Follow us on <a href="#" className="hover:text-red-600">Facebook</a>, <a href="#" className="hover:text-red-600">Instagram</a>, and <a href="#" className="hover:text-red-600">Twitter</a></p>
-                    </div>
-                </div>
-            </section>
             <div
                 id="Contact"
-                className="lg:flex gap-5 justify-between mt-[2%] bg-gray-900  lg:h-[60vh] items-center sm:text-center sm:justify-between md:justify-center sm:py-[20px] w-full"
+                className="lg:flex gap-5 justify-between mt-[2%] bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500  lg:h-[60vh] items-center sm:text-center sm:justify-between md:justify-center sm:py-[20px] w-full"
             >
                 <div className="flex items-center gap-2 lg:pl-[5%] max-sm:justify-center max-sm:pt-5 md:justify-center md:pt-5">
                     <Image height={100} width={30} src={"/geo-alt-fill.svg"} alt="" />
