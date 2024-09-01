@@ -24,7 +24,7 @@ export default function Home() {
                 <section className="py-16 px-4 bg-gray-900">
                     <div className="max-w-6xl mx-auto text-center flex items-center justify-center flex-col">
                         <h2 className="text-4xl font-bold animate-fade-in">About Us</h2>
-                        <p className="mt-6 text-lg animate-fade-in-up w-[500px]">
+                        <p className="mt-6 text-lg animate-fade-in-up w-[500px] sm:w-full">
                             JoyStick Junction (Paradise For Gamers) is a place where you and your
                             team mates can come and experience fast and seamless gaming
                             experience. Our Gaming Hall is packed with industry standards gaming
