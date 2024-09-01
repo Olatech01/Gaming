@@ -3,10 +3,10 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className="service bg-cover bg-center h-[70vh]" style={{ backgroundImage: "url('/recent.png')" }}>
-            <div className="flex flex-col items-center justify-center lg:gap-[50px] mt-[5%] sm:gap-[20px]">
+        <div className="service bg-cover bg-center" style={{ backgroundImage: "url('/recent.png')" }}>
+            <div className="flex flex-col items-center justify-center sm:px-[20px] lg:gap-[50px] mt-[5%] sm:gap-[20px]">
                 <h1 className="lg:text-5xl sm:text-4xl font-extrabold">Services</h1>
-                <div className="flex">
+                <div className="flex sm:flex-col">
                     <div className="flex gap-5 flex-col lg:items-center lg:justify-center max-sm:items-center md:items-center">
                         <h1 className="font-bold lg:text-2xl md:text-3xl">
                             <u>Experience Our Services:</u>

@@ -7,11 +7,6 @@ import Marquee from 'react-fast-marquee';
 export default function Home() {
     return (
         <div>
-            <Head>
-                <title>Gaming PlayStation House</title>
-                <meta name="description" content="Come play the latest games at our PlayStation house!" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
 
             <main className="bg-black text-white">
                 {/* Hero Section */}
