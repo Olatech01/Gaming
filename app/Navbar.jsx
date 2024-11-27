@@ -20,6 +20,10 @@ const Navbar = ({ scrollToSection, aboutRef, serviceRef, contactRef }) => {
         <li onClick={() => scrollToSection(serviceRef)}>Services</li>
         <li onClick={() => scrollToSection(contactRef)}>Contact</li>
       </ul>
+      <div>
+        <button>Login</button>
+        <button className='text-[16px] '>Register</button>
+      </div>
       <button
         className="hidden bg-dimWhite sm:block rounded-xl bg-blue-gradient p-2 text-black z-[500]"
         onClick={handleToggle}
