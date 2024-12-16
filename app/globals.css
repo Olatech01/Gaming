@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.cod{
+.cod {
   background-image: url(../public/cod.jpg);
   height: 50vh;
   background-repeat: no-repeat;
@@ -23,9 +23,11 @@
   0% {
     background-image: url('../public/hero.jpg');
   }
+
   50% {
     background-image: url('../public/review-bg.png');
   }
+
   100% {
     background-image: url('../public/hero.jpg');
   }
@@ -38,7 +40,8 @@
   animation: bgChange 10s infinite alternate;
 }
 
-.hero h1, .hero p {
+.hero h1,
+.hero p {
   position: relative;
   z-index: 2;
   text-align: center;
@@ -46,8 +49,8 @@
 }
 
 .auth {
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  background-image:
+    linear-gradient(rgba(93, 95, 239, 0.5), rgba(93, 95, 239, 0.5)),
     url('../public/aboutBG.jpg');
   height: 100vh;
   background-repeat: no-repeat;
@@ -55,4 +58,27 @@
   width: 100%;
 }
 
+.herobg {
+  background-image: url('/fc25.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 
+.herobg {
+  image-rendering: optimizeQuality;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.play {
+  background-image:
+    url('../public/mask.svg');
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}

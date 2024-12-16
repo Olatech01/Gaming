@@ -11,18 +11,18 @@ const Navbar = ({ scrollToSection, aboutRef, serviceRef, contactRef }) => {
     setToggle(!toggle)
   }
   return (
-    <div className='bg-[#000] w-full border-b flex justify-around items-center'>
+    <div className='bg-[white] w-full border-b flex justify-around items-center'>
       <div>
-        <Image height={20} width={200} src={"/logo.png"} />
+        <Image height={20} width={150} src={"/logo.png"} />
       </div>
-      <ul className='flex gap-[20px] text-white font-bold sm:hidden cursor-pointer'>
+      <ul className='flex gap-[20px] font-bold sm:hidden cursor-pointer'>
         <li onClick={() => scrollToSection(aboutRef)}>About</li>
         <li onClick={() => scrollToSection(serviceRef)}>Services</li>
         <li onClick={() => scrollToSection(contactRef)}>Contact</li>
       </ul>
-      <div>
-        <button>Login</button>
-        <button className='text-[16px] '>Register</button>
+      <div className='flex gap-3'>
+        <button className='text-[16px] border border-black w-[150px] rounded-md h-[40px]'>Login</button>
+        <button className='text-[16px] border bg-black text-white border-black w-[150px] rounded-md h-[40px]'>Register</button>
       </div>
       <button
         className="hidden bg-dimWhite sm:block rounded-xl bg-blue-gradient p-2 text-black z-[500]"
