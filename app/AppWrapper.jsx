@@ -13,7 +13,10 @@ const AppWrapper = ({children}) => {
         "/auth/forgetPassword",
         "/auth/otpVerification",
         "/auth/resetPassword",
-        "/dashboard"
+        "/dashboard",
+        "/dashboard/settings",
+        "/dashboard/tournament",
+        "/dashboard/fixture",
     ].includes(pathname)
     return (
         <div>

@@ -1,10 +1,10 @@
-import Dashboard from '@/components/Dashboard/Dashboard'
+import Tournament from '@/components/Dashboard/Tournament/Tournament'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Dashboard />
+        <Tournament />
     </div>
   )
 }

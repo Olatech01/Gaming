@@ -1,10 +1,10 @@
-import Dashboard from '@/components/Dashboard/Dashboard'
+import Settings from '@/components/Dashboard/Settings/Settings'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Dashboard />
+        <Settings />
     </div>
   )
 }

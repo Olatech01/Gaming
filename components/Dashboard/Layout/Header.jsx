@@ -6,9 +6,9 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import Image from 'next/image';
 import { AuthContext } from '@/components/libs/AuthContext';
 const Header = ({ toggleSidebar }) => {
-    const { user, logOut, userType } = useContext(AuthContext);
+    // const { user, logOut, userType } = useContext(AuthContext);
 
-    console.log(user);
+    // console.log(user);
 
     
 
@@ -16,12 +16,12 @@ const Header = ({ toggleSidebar }) => {
         <div className='flex justify-between items-center px-10 py-4 bg-[#EDF1FF]'>
             <div className='flex items-center gap-2'>
                 <FaBars size={24} className='lg:hidden sm:block' onClick={toggleSidebar} />
-                {/* Admin */}
+                <h2 className='text-[32px] font-bold'>Welcome, John Doe </h2>
             </div>
             <div className='flex gap-2 items-center relative'>
                 <IoMdNotifications size={24} />
                 <div className='flex flex-col items-end'>
-                    <h2 className='text-[18px] font-semibold'>
+                    {/* <h2 className='text-[18px] font-semibold'>
                         {user ? (
                             <div className="flex items-center gap-4">
                                 <p className="text-lg">{user?.first_name}</p>
@@ -33,7 +33,7 @@ const Header = ({ toggleSidebar }) => {
                     </h2>
                     <div className='text-[10px] font-medium items-end'>
                         <p>{userType?.userType}</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div  className='flex items-center gap-2'>
                     <Image

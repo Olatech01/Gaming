@@ -59,7 +59,7 @@
 }
 
 .herobg {
-  background-image: url('/fc25.jpg');
+  background-image: url('/hero.svg');
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
